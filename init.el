@@ -21,6 +21,7 @@
 
 (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
 (add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (add-hook 'prog-mode-hook 'linum-mode)
 
 (add-hook 'text-mode-hook 'smartparens-mode)
@@ -31,5 +32,4 @@
 ;; (yas-global-mode 1)
 (yas-reload-all)
 (add-hook 'prog-mode-hook 'yas-minor-mode)
-
 
